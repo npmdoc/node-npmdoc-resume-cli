@@ -1,0 +1,462 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >resume-cli (v0.4.19)</a>
+</h1>
+<h4>The JSON Resume command line interface</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.resume-cli">module resume-cli</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">resume-cli.</span>menu</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">resume-cli.</span>pre</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">resume-cli.</span>validate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">resume-cli.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.resume-cli.menu">module resume-cli.menu</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.resume-cli.menu.publish">
+            function <span class="apidocSignatureSpan">resume-cli.menu.</span>publish
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.resume-cli.pre">module resume-cli.pre</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.resume-cli.pre.getConfig">
+            function <span class="apidocSignatureSpan">resume-cli.pre.</span>getConfig
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.resume-cli.pre.getResume">
+            function <span class="apidocSignatureSpan">resume-cli.pre.</span>getResume
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">resume-cli.pre.</span>checkPkgVersion</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.resume-cli.validate">module resume-cli.validate</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.resume-cli.validate.email">
+            function <span class="apidocSignatureSpan">resume-cli.validate.</span>email
+            <span class="apidocSignatureSpan">(email)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.resume-cli.validate.passwords">
+            function <span class="apidocSignatureSpan">resume-cli.validate.</span>passwords
+            <span class="apidocSignatureSpan">(password1, password2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.resume-cli.validate.username">
+            function <span class="apidocSignatureSpan">resume-cli.validate.</span>username
+            <span class="apidocSignatureSpan">(username)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.resume-cli.version">module resume-cli.version</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.resume-cli.version.checkVersionAndSession">
+            function <span class="apidocSignatureSpan">resume-cli.version.</span>checkVersionAndSession
+            <span class="apidocSignatureSpan">(config, setSessionTime, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.resume-cli" id="apidoc.module.resume-cli">module resume-cli</a></h1>
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.resume-cli.menu" id="apidoc.module.resume-cli.menu">module resume-cli.menu</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.resume-cli.menu.publish" id="apidoc.element.resume-cli.menu.publish">
+        function <span class="apidocSignatureSpan">resume-cli.menu.</span>publish
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">publish = function (callback) {
+  var menu = require(&#x27;terminal-menu&#x27;)({
+    width: 35,
+    x: 4,
+    y: 2,
+    bg: &#x27;black&#x27;,
+    fg: &#x27;cyan&#x27;
+  });
+  menu.reset();
+  menu.write(&#x27;        PUBLISH MENU\n&#x27;);
+  menu.write(&#x27;------------------------------\n&#x27;);
+  menu.add(customPublish);
+  menu.add(guestPublish);
+  menu.add(encriptedCustom);
+  menu.add(encriptedGuest);
+  menu.write(&#x27;------------------------------\n&#x27;);
+  menu.add(&#x27;EXIT&#x27;);
+  menu.write(&#x27;\n&#x27;);
+  menu.write(&#x27;To acquire account details, press ^C and type: `resume register`\n&#x27;.white);
+  menu.write(&#x27;Or just publish as guest.&#x27;.white);
+  menu.on(&#x27;select&#x27;, function(option) {
+    menu.close();
+    console.log(&#x27;\nSELECTED: &#x27; + option);
+    if (option === &#x27;EXIT&#x27;) {
+      return;
+    } else {
+      callback(option);
+    }
+  });
+
+  process.stdin
+    .pipe(menu.createStream())
+    .pipe(process.stdout); //create key stream
+  process.stdin.setRawMode(true); //listen for keys
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    });
+  });
+
+program
+  .command(&#x27;publish&#x27;)
+  .description(&#x27;Publish your resume to https://registry.jsonresume.org&#x27;)
+  .action(function() {
+    lib.<span class="apidocCodeKeywordSpan">publish</span>(resumeJson, program, config);
+  });
+
+program
+  .command(&#x27;serve&#x27;)
+  .description(&#x27;Serve resume at http://localhost:4000/&#x27;)
+  .action(function() {
+    lib.serve(program.port, program.theme, program.silent, program.dir, program.resume);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.resume-cli.pre" id="apidoc.module.resume-cli.pre">module resume-cli.pre</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.resume-cli.pre.getConfig" id="apidoc.element.resume-cli.pre.getConfig">
+        function <span class="apidocSignatureSpan">resume-cli.pre.</span>getConfig
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getConfig = function (callback) {
+  var results = {};
+  fs.readFile(homeDirectory + &#x27;/.jsonresume.json&#x27;, function(noConfigFile, config) {
+    if (noConfigFile) {
+      var config = false;
+    } else {
+
+      try {
+        var config = JSON.parse(config);
+      } catch (err) {
+        // if exists but is empty
+        var config = false;
+      }
+    }
+
+    callback(null, config);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.resume-cli.pre.getResume" id="apidoc.element.resume-cli.pre.getResume">
+        function <span class="apidocSignatureSpan">resume-cli.pre.</span>getResume
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getResume = function (callback) {
+  fs.readFile(&#x27;./resume.json&#x27;, function(resumeJsonDoesNotExist, data) {
+
+    if (resumeJsonDoesNotExist) {
+      if ([&#x27;export&#x27;, &#x27;publish&#x27;, &#x27;test&#x27;].indexOf(process.argv[2]) !== -1) { // removed serve. test this later
+        console.log(&#x27;There is no resume.json file located in this directory&#x27;);
+        console.log(&#x27;Type: `resume init` to initialize a new resume&#x27;);
+      }
+
+      var resumeJson = false;
+      callback(null);
+    } else {
+      try {
+        jsonlint.parse(String(data));
+        var resumeJson = JSON.parse(data);
+
+        callback(null, resumeJson);
+      } catch (error) {
+        callback(error);
+      }
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.resume-cli.validate" id="apidoc.module.resume-cli.validate">module resume-cli.validate</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.resume-cli.validate.email" id="apidoc.element.resume-cli.validate.email">
+        function <span class="apidocSignatureSpan">resume-cli.validate.</span>email
+        <span class="apidocSignatureSpan">(email)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">email = function (email) {
+    var re = /\S+@\S+\.\S+/;
+    if (re.test(email)) {
+        return;
+    }
+    console.log(&#x27;Email format is invalid.&#x27;.red);
+    process.exit();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.resume-cli.validate.passwords" id="apidoc.element.resume-cli.validate.passwords">
+        function <span class="apidocSignatureSpan">resume-cli.validate.</span>passwords
+        <span class="apidocSignatureSpan">(password1, password2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">passwords = function (password1, password2) {
+    if (password1 === password2) {
+        return;
+    }
+    console.log(&#x27;Your passwords did not match, try again.&#x27;.red);
+    process.exit();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.resume-cli.validate.username" id="apidoc.element.resume-cli.validate.username">
+        function <span class="apidocSignatureSpan">resume-cli.validate.</span>username
+        <span class="apidocSignatureSpan">(username)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">username = function (username) {
+    var re = /^[^_-][a-zA-Z0-9\-_]{2,30}$/;
+    if (re.test(username)) {
+        return;
+    }
+    console.log(&#x27;Username may only contain alphanumeric characters, underscores or dashes, must be at least 3 characters, and cannot
+ begin with a dash or underscore.&#x27;.red);
+    // must be over 2 characters
+    process.exit();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.resume-cli.version" id="apidoc.module.resume-cli.version">module resume-cli.version</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.resume-cli.version.checkVersionAndSession" id="apidoc.element.resume-cli.version.checkVersionAndSession">
+        function <span class="apidocSignatureSpan">resume-cli.version.</span>checkVersionAndSession
+        <span class="apidocSignatureSpan">(config, setSessionTime, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function checkVersionAndSession(config, setSessionTime, callback) {
+
+  var currentTime = (new Date).getTime();
+
+  if(!config){
+    writeToConfig({
+      checkVersion: currentTime,
+      checkSession: currentTime
+    }, function(err) {
+
+      return callback(err);
+    });
+  }
+
+  // console.log(config.checkVersion);
+
+  //config file exists
+  // config = JSON.parse(config);
+  var itIsCheckVersionTime = currentTime - config.checkVersion &#x3e; 86400000; // check if module is up-to-date every day
+  var itIsCheckSessionTime = currentTime - config.checkSession &#x3e; 604800000; // refresh session every 7 days
+
+  // console.log(itIsCheckVersionTime, itIsCheckSessionTime, config.checkVersion, config);
+  if (itIsCheckVersionTime || typeof(config.checkVersion) === &#x27;undefined&#x27;) {
+
+    config.checkVersion = currentTime;
+    writeToConfig(config, function(err) {
+
+
+      checkNPMVersion(function(outOfDate, LatestnpmVersion) {
+
+        callback(outOfDate, LatestnpmVersion);
+      });
+
+    });
+
+  } else if (itIsCheckSessionTime || typeof(config.checkSession) === &#x27;undefined&#x27;) {
+    // getNewSessionAuth()
+    config.checkSession = currentTime;
+    writeToConfig(config, function(err) {
+
+      callback();
+    });
+  }
+  callback();
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
