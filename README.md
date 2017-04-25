@@ -1,6 +1,6 @@
 # npmdoc-resume-cli
 
-#### api documentation for  resume-cli (v0.4.19)  [![npm package](https://img.shields.io/npm/v/npmdoc-resume-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-resume-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-resume-cli.svg)](https://travis-ci.org/npmdoc/node-npmdoc-resume-cli)
+#### basic api documentation for  [resume-cli (v0.4.19)](https://github.com/rolandnsharp/resume-cli#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-resume-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-resume-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-resume-cli.svg)](https://travis-ci.org/npmdoc/node-npmdoc-resume-cli)
 
 #### The JSON Resume command line interface
 
@@ -21,22 +21,12 @@
 ```json
 
 {
-    "name": "resume-cli",
-    "version": "0.4.19",
-    "description": "The JSON Resume command line interface",
-    "main": "index.js",
-    "scripts": {
-        "test": "node node_modules/mocha/bin/mocha test test/*.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/rolandnsharp/resume-cli.git"
-    },
-    "license": "MIT",
     "bin": {
         "resume": "index.js"
     },
-    "preferGlobal": true,
+    "bugs": {
+        "url": "https://github.com/rolandnsharp/resume-cli/issues"
+    },
     "dependencies": {
         "async": "^1.5.0",
         "chalk": "^1.1.1",
@@ -61,12 +51,63 @@
         "superagent": "^2.0.0",
         "terminal-menu": "^2.1.1"
     },
+    "description": "The JSON Resume command line interface",
     "devDependencies": {
         "mocha": "^3.0.2"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "25f8374a844aa652021a1611a1c1077781a8bf7b",
+        "tarball": "https://registry.npmjs.org/resume-cli/-/resume-cli-0.4.19.tgz"
+    },
     "engines": {
         "node": "^4"
-    }
+    },
+    "gitHead": "6a813ea695191eea52114d031ea71ffbec05daab",
+    "homepage": "https://github.com/rolandnsharp/resume-cli#readme",
+    "license": "MIT",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "rolandnsharp"
+        },
+        {
+            "name": "thomasdavis"
+        },
+        {
+            "name": "erming"
+        },
+        {
+            "name": "mchelen"
+        }
+    ],
+    "name": "resume-cli",
+    "optionalDependencies": {},
+    "preferGlobal": true,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rolandnsharp/resume-cli.git"
+    },
+    "scripts": {
+        "test": "node node_modules/mocha/bin/mocha test test/*.js"
+    },
+    "version": "0.4.19",
+    "warnings": [
+        {
+            "code": "ENOTSUP",
+            "required": {
+                "node": "^4"
+            },
+            "pkgid": "resume-cli@0.4.19"
+        },
+        {
+            "code": "ENOTSUP",
+            "required": {
+                "node": "^4"
+            },
+            "pkgid": "resume-cli@0.4.19"
+        }
+    ]
 }
 ```
 
