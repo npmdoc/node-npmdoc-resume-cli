@@ -49,6 +49,8 @@
 <h1>api documentation for
     <a
 
+        href="https://github.com/rolandnsharp/resume-cli#readme"
+
     >resume-cli (v0.4.19)</a>
 </h1>
 <h4>The JSON Resume command line interface</h4>
@@ -344,7 +346,23 @@ program
     console.log(&#x27;Email format is invalid.&#x27;.red);
     process.exit();
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var defaultEmail = resumeJson &#x26;&#x26; resumeJson.basics.email || &#x27;&#x27;;
+
+    read({
+        prompt: &#x22;email: &#x22;,
+        default: defaultEmail
+    }, function(err, email) {
+
+        validate.<span class="apidocCodeKeywordSpan">email</span>(email);
+        next(err, email);
+    });
+},
+password: function(next) {
+    read({
+        prompt: &#x22;password: &#x22;,
+        silent: true
+...</pre></li>
     </ul>
 
 
@@ -363,7 +381,23 @@ program
     console.log(&#x27;Your passwords did not match, try again.&#x27;.red);
     process.exit();
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }
+
+        read({
+            prompt: &#x22;re-enter password: &#x22;,
+            silent: true
+        }, function(err, password) {
+
+            validate.<span class="apidocCodeKeywordSpan">passwords</span>(user.password, password);
+
+            registerUser(user, function(err, res) {
+
+writeConfig({
+    username: res.username,
+    email: res.email
+});
+...</pre></li>
     </ul>
 
 
@@ -385,7 +419,22 @@ program
     // must be over 2 characters
     process.exit();
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    async.series({
+        username: function(next) {
+read({
+    prompt: &#x22;username: &#x22;
+}, function(err, username) {
+
+    validate.<span class="apidocCodeKeywordSpan">username</span>(username);
+    next(err, username);
+});
+        },
+        email: function(next) {
+
+var defaultEmail = resumeJson &#x26;&#x26; resumeJson.basics.email || &#x27;&#x27;;
+...</pre></li>
     </ul>
 
 
